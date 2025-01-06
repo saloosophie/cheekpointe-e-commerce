@@ -1,0 +1,44 @@
+.swiper-wrapper {
+    width: 100%;
+    height: max-content !important;
+    padding-bottom: 100px !important;
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+    }
+    .swiper-pagination-bullet {
+    background: #ff0000;
+    }
+    .swiper-pagination-bullet-active {
+    background: #ff0000 !important;
+    }
+    @media (max-width: 768px) {
+        .nav ul {
+          flex-direction: column;
+          text-align: center;
+        }
+        .header {
+          flex-direction: column;
+        }
+        .carousel-item img {
+          height: auto;
+          object-fit: cover;
+        }
+        .p-10 {
+          padding: 1rem; /* Réduction des marges internes */
+        }
+      }
+      
+      /* Styles pour les écrans moyens (tablettes) */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .grid-cols-1 {
+          grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour les sections */
+        }
+      }
+      
+      /* Styles pour les grands écrans (ordinateurs de bureau) */
+      @media (min-width: 1025px) {
+        .grid-cols-2 {
+          grid-template-columns: repeat(4, 1fr); /* Quatre colonnes */
+        }
+      }
